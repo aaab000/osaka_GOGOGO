@@ -52,10 +52,12 @@
 
                 </div>
                 <div class="relative"><div class="timeline-dot w-3 h-3 bg-orange-400"></div>
+                     <a href="https://maps.app.goo.gl/zMM492xbetCZPUwZA" target="_blank">
                     <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
                         <h3 class="font-bold text-slate-800">Shake Shack 漢堡</h3>
                         <p class="text-xs text-slate-500 mt-1">大丸心齋橋 / agete / 寶可夢中心 / 吉伊卡哇land</p>
                     </div>
+                         </a>
                 </div>
                 <div class="relative"><div class="timeline-dot w-3 h-3 bg-red-500"></div>
                     <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100">
@@ -272,6 +274,29 @@
         }
 
         renderItems(); // 初始化讀取清單
+
+        // 儲存內容
+function saveContent(id) {
+    const element = document.getElementById('edit-' + id);
+    localStorage.setItem('osaka_trip_' + id, element.innerText);
+}
+
+// 讀取內容（頁面載入時執行）
+function loadAllContent() {
+    // 找出所有具備 edit- 開頭 ID 的元素
+    const editableElements = document.querySelectorAll('[id^="edit-"]');
+    
+    editableElements.forEach(el => {
+        const id = el.id.replace('edit-', '');
+        const savedValue = localStorage.getItem('osaka_trip_' + id);
+        if (savedValue !== null) {
+            el.innerText = savedValue;
+        }
+    });
+}
+
+// 確保網頁開啟時自動讀取
+window.addEventListener('DOMContentLoaded', loadAllContent);
     </script>
 </body>
 </html>
