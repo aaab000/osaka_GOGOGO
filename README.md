@@ -1,1 +1,1 @@
-# osaka_GOGOGO
+# OSAKA GO！
