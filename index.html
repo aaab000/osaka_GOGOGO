@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-	<script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> OSAKA GO！ </title>
@@ -13,13 +12,13 @@
         .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
         .tab-active { color: #ef4444; border-bottom: 3px solid #ef4444; }
         .nav-active { color: #ef4444 !important; }
-        .timeline-dot { position: absolute; left: -31px; top: 0; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .timeline-dot { position: absolute; left: -31px; top: 18px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; }
     </style>
 </head>
 <body class="bg-slate-50 pb-24">
 
     <nav class="sticky top-0 z-50 glass border-b border-gray-200 p-4 text-center">
-        <h1 id="main-title" class="text-xl font-black text-slate-800 tracking-tighter italic">OSAKA GOGO</h1>
+        <h1 id="main-title" class="text-xl font-black text-slate-800 tracking-tighter italic">OSAKA ADVENTURE</h1>
     </nav>
 
     <div id="page-itinerary" class="main-page">
@@ -34,251 +33,182 @@
         </div>
 
         <main class="max-w-md mx-auto p-4">
-             <div id="content-1" class="day-content space-y-6">
-            <div class="bg-red-500 text-white p-5 rounded-2xl shadow-lg">
-                <h2 class="text-lg font-bold">4/14 (二) 心齋橋市區</h2>
-                <div class="mt-2 text-xs opacity-90 space-y-1">
-                    <p><i class="fas fa-plane"></i> IT210 06:40-10:24 (桃園T2)</p>
-                    <p><i class="fas fa-hotel"></i> 飯店: 日居大正一号館</p>
-                </div>
-            </div>
-             <div class="space-y-6 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
-                <div class="relative">
-					<div class="timeline-dot w-3 h-3 bg-blue-500"></div>
-                    <a href="https://maps.app.goo.gl/pQ85Xj7rp1eXU9Xz7" target="_blank" class="block active:scale-95 transition">
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                        <h3 class="font-bold text-slate-800">日居大正一号館</h3>
-                        <p class="text-xs text-red-500 mt-1 font-bold italic">⚠️ 行李放玄關，務必拍照回傳給房東</p>
+            <div id="content-1" class="day-content space-y-6">
+                <div class="bg-red-500 text-white p-5 rounded-2xl shadow-lg">
+                    <h2 class="text-lg font-bold">4/14 (二) 心齋橋市區</h2>
+                    <div class="mt-2 text-xs opacity-90 space-y-1">
+                        <p><i class="fas fa-plane"></i> IT210 06:40-10:24 (桃園T2)</p>
+                        <p><i class="fas fa-hotel"></i> 飯店: 日居大正一号館</p>
                     </div>
+                </div>
+                <div class="space-y-8 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
+                    <div class="relative">
+                        <div class="timeline-dot bg-blue-500"></div>
+                        <a href="https://maps.google.com" target="_blank" class="block active:scale-95 transition">
+                            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                                <h3 class="font-bold text-slate-800">日居大正一号館</h3>
+                                <p class="text-xs text-red-500 mt-1 font-bold italic">⚠️ 行李放玄關，務必拍照回傳</p>
+                            </div>
                         </a>
-
-                </div>
-                <div class="relative"><div class="timeline-dot w-3 h-3 bg-orange-400"></div>
-                      <a href="https://maps.app.goo.gl/P73ikUEEaW4vHUXx7" target="_blank" class="block active:scale-95 transition">
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                        <h3 class="font-bold text-slate-800">Shake Shack 漢堡</h3>
-                        <p class="text-xs text-slate-500 mt-1">大丸心齋橋 / agete / 寶可夢中心 / 吉伊卡哇land</p>
                     </div>
-                          </a>
-                </div>
-                <div class="relative"><div class="timeline-dot w-3 h-3 bg-red-500"></div>
-                    <a href="https://maps.app.goo.gl/ALQ45SGLtEdN8bJX8" target="_blank" class="block active:scale-95 transition">
-                    <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100">
-                            <div class="flex justify-between items-center text-red-800">
-                            <h3 class="font-bold italic">晚餐: 蔬菜串燒 Narutoya</h3>
-                            <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">17:30 預約</span>
-                        </div>
-                            </a>
+                    <div class="relative">
+                        <div class="timeline-dot bg-orange-400"></div>
+                        <a href="https://maps.google.com" target="_blank" class="block active:scale-95 transition">
+                            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                                <h3 class="font-bold text-slate-800">Shake Shack 漢堡</h3>
+                                <p class="text-xs text-slate-500 mt-1">大丸心齋橋 / 吉伊卡哇land</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="content-2" class="day-content hidden space-y-6">
-    <div class="bg-indigo-600 text-white p-5 rounded-2xl shadow-lg">
-        <h2 class="text-lg font-bold">4/15 (三) 日本環球影城</h2>
-        <p class="text-xs opacity-90 mt-1 italic">USJ 全日攻略</p>
-    </div>
-
-    <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
-        <h3 class="font-black text-amber-800 text-sm italic underline">🌟 快速通關時間表</h3>
-        <ul class="text-xs text-amber-700 space-y-1 font-bold mt-2">
-            <li>• 11:20- 進入超級任天堂世界</li>
-            <li>• 11:40- 瑪利歐賽車</li>
-            <li>• 14:00- 進入哈利波特區</li>
-            <li>• 14:20- 禁忌之旅</li>
-        </ul>
-    </div>
-
-    <div class="space-y-8 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
-        
-        <div class="relative">
-            <div class="timeline-dot w-3 h-3 bg-indigo-500"></div>
-             <a href="https://maps.app.goo.gl/9H4p3XgVUVqZL5xM7" target="_blank" class="block active:scale-95 transition">
-            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                <h3 class="font-bold text-slate-800">USJ 門口集合</h3>
-                <p class="text-xs text-red-500 mt-1 italic">⚠️ 建議提早 1 小時去門口排隊</p>
-            </div>
-                  <a>
-        </div>
-
-        <div class="relative">
-            <div class="timeline-dot w-3 h-3 bg-red-500"></div>
-            <a href="https://maps.google.com/?q=Tokuchan" target="_blank" class="block active:scale-95 transition">
-                <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100">
-                    <div class="flex justify-between items-center text-red-800">
-                        <h3 class="font-bold italic">晚餐: 燒肉內臟 Tokuchan</h3>
-                      
-                    </div>
-                </div>
-            </a>
-        </div>
-
-    </div> 
-</div>
-
-        <div id="content-3" class="day-content hidden space-y-6">
-            <div class="bg-emerald-600 text-white p-5 rounded-2xl shadow-lg">
-                <h2 class="text-lg font-bold">4/16 (四) 京都文化之旅</h2>
-                <p class="text-xs opacity-90 mt-1 italic">下鴨神社 & 河原町</p>
-            </div>
-            <div class="bg-green-50 p-4 rounded-xl border border-green-200">
-                <h3 class="font-bold text-green-800 text-sm">🔖 必買御守清單</h3>
-                <p class="text-xs text-green-700 mt-1 leading-relaxed">
-                   蕾絲御守、媛守(結緣)、水守(消災)、八咫烏(除厄)、戒指御守(脆上有人說很容易掉色)
-                    </p>
-            </div>
-            <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
-         <h3 class="font-bold text-amber-800 text-sm">🚌 公車 </h3>
-         <ul class="text-xs text-amber-700 space-y-1 font-bold mt-2">
-            <li>•京都車站前 ⮂ 新葵橋 
-             <span class="ml-2 text-xs bg-[#ff8a5e] text-white px-2 py-1 rounded-full font-bold">205 City Bus</span>
-             <span class="ml-2 text-xs bg-[#5e89ff] text-white px-2 py-1 rounded-full font-bold">松ヶ崎4 City Bus </span>
-            </li>
-            
-        </ul>
-    </div>
-			<div class="space-y-4 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
-    <div class="relative">
-    <div class="timeline-dot w-3 h-3 bg-red-500"></div>
-
-    <a href="https://maps.app.goo.gl/uhG5KyWRD2MZEEaU7" target="_blank" class="block active:scale-95 transition">
-        <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100">
-            <div class="flex justify-between items-center text-red-800 w-full">
-                <h3 class="font-bold italic">午餐: 敘敘苑 JR京都伊勢丹店</h3>
-                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold whitespace-nowrap ml-2">11:00 預約</span>
-            </div>
-        </div>
-    </a>
-</div>
-           
-            
-                <div class="relative"><div class="timeline-dot w-3 h-3 bg-emerald-500"></div>
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                        <h3 class="font-bold">下鴨神社</h3>
-                        <p class="text-xs text-slate-500 mt-1">糺之森漫步、御手洗池</p>
-                    </div>
-                </div>
-
-                <div class="relative"><div class="timeline-dot w-3 h-3 bg-red-500"></div>
-                    <a href="https://maps.app.goo.gl/Avr1cQLBBfcsoXJ67" target="_blank" class="block active:scale-95 transition">
-                    <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100">
+                    <div class="relative">
+                        <div class="timeline-dot bg-red-500"></div>
+                        <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100">
                             <div class="flex justify-between items-center text-red-800 w-full">
-                        <h3 class="font-bold italic">晚餐: 京都 かに銀 河原町店</h3>
-                        <span class="inline-block mt-2 text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">17:30 預約</span>
-                    </div>
-                        <a>
-                </div>
-            </div>
-        </div>
-
-        <div id="content-4" class="day-content hidden space-y-6">
-            <div class="bg-amber-500 text-white p-5 rounded-2xl shadow-lg">
-                <h2 class="text-lg font-bold">4/17 (五) 木津市場 & 梅田</h2>
-            </div>
-            <div class="space-y-4 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
-                <div class="relative"><div class="timeline-dot w-3 h-3 bg-amber-500"></div>
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                        <h3 class="font-bold">木津市場</h3>
-                        <p class="text-xs text-slate-500 mt-1">海鮮早午餐探險</p>
-                    </div>
-                </div>
-                <div class="relative"><div class="timeline-dot w-3 h-3 bg-red-500"></div>
-                    <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100 text-red-800">
-                        <div class="flex justify-between items-center">
-                            <h3 class="font-bold italic">晚餐: 天星天婦羅</h3>
-                            <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">17:00 預約</span>
-                        </div>
-                        <p class="text-xs mt-2 font-bold italic underline">⚠️ 注意：禁止短褲、拖鞋 (Dress Code)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="content-5" class="day-content hidden space-y-6">
-            <div class="bg-slate-700 text-white p-5 rounded-2xl shadow-lg">
-                <h2 class="text-lg font-bold">4/18 (六) 最後衝刺 & 返台</h2>
-            </div>
-            <div class="space-y-4 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
-                <div class="relative"><div class="timeline-dot w-3 h-3 bg-red-500"></div>
-                    <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100 text-red-800">
-                        <div class="flex justify-between items-center">
-                            <h3 class="font-bold italic">午餐: 敘敘苑 (大阪店)</h3>
-                            <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">11:30 預約</span>
+                                <h3 class="font-bold italic">晚餐: 蔬菜串燒 Narutoya</h3>
+                                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">17:30 預約</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="relative"><div class="timeline-dot w-3 h-3 bg-slate-500"></div>
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-slate-500 italic">
-                        <h3 class="font-bold">前往關西機場 (KIX)</h3>
-                        <p class="text-xs mt-1">IT211 11:35 起飛 (預計)</p>
+            </div>
+
+            <div id="content-2" class="day-content hidden space-y-6">
+                <div class="bg-indigo-600 text-white p-5 rounded-2xl shadow-lg">
+                    <h2 class="text-lg font-bold">4/15 (三) 日本環球影城</h2>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                    <h3 class="font-black text-amber-800 text-sm italic underline">🌟 快速通關時間表</h3>
+                    <ul class="text-xs text-amber-700 space-y-1 font-bold mt-2">
+                        <li>• 11:20- 進入超級任天堂世界</li>
+                        <li>• 11:40- 瑪利歐賽車</li>
+                        <li>• 14:00- 進入哈利波特區</li>
+                    </ul>
+                </div>
+                <div class="space-y-8 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
+                    <div class="relative">
+                        <div class="timeline-dot bg-indigo-500"></div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                            <h3 class="font-bold">USJ 門口集合</h3>
+                            <p class="text-xs text-red-500 mt-1 italic">⚠️ 建議提早 1 小時排隊</p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot bg-red-500"></div>
+                        <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100 text-red-800">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold italic">晚餐: 燒肉內臟 Tokuchan</h3>
+                                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">19:00 預計</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div id="content-3" class="day-content hidden space-y-6">
+                <div class="bg-emerald-600 text-white p-5 rounded-2xl shadow-lg">
+                    <h2 class="text-lg font-bold">4/16 (四) 京都文化之旅</h2>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                    <h3 class="font-bold text-amber-800 text-sm">🚌 公車資訊</h3>
+                    <p class="text-xs text-amber-700 mt-2 font-bold">
+                        京都車站前 ⮂ 新葵橋 
+                        <span class="ml-2 bg-[#ff8a5e] text-white px-2 py-0.5 rounded-full">205</span>
+                        <span class="ml-1 bg-[#5e89ff] text-white px-2 py-0.5 rounded-full">松ヶ崎4</span>
+                    </p>
+                </div>
+                <div class="space-y-8 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
+                    <div class="relative">
+                        <div class="timeline-dot bg-red-500"></div>
+                        <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100">
+                            <div class="flex justify-between items-center text-red-800 w-full">
+                                <h3 class="font-bold italic">午餐: 敘敘苑 JR京都</h3>
+                                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">11:00 預約</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot bg-emerald-500"></div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                            <h3 class="font-bold">下鴨神社</h3>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot bg-red-500"></div>
+                        <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100 text-red-800">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold italic">晚餐: かに銀 河原町店</h3>
+                                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">17:30 預約</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-4" class="day-content hidden space-y-6">
+                <div class="bg-amber-500 text-white p-5 rounded-2xl shadow-lg">
+                    <h2 class="text-lg font-bold">4/17 (五) 木津市場 & 梅田</h2>
+                </div>
+                <div class="space-y-8 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
+                    <div class="relative">
+                        <div class="timeline-dot bg-amber-500"></div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                            <h3 class="font-bold">木津市場</h3>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot bg-red-500"></div>
+                        <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100 text-red-800">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold italic">晚餐: 天星天婦羅</h3>
+                                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">17:00 預約</span>
+                            </div>
+                            <p class="text-xs mt-2 font-bold italic underline">⚠️ 注意：禁止短褲、拖鞋</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-5" class="day-content hidden space-y-6">
+                <div class="bg-slate-700 text-white p-5 rounded-2xl shadow-lg">
+                    <h2 class="text-lg font-bold">4/18 (六) 最後衝刺 & 返台</h2>
+                </div>
+                <div class="space-y-8 border-l-2 border-dashed border-slate-200 ml-4 pl-6 relative">
+                    <div class="relative">
+                        <div class="timeline-dot bg-red-500"></div>
+                        <div class="bg-red-50 p-4 rounded-xl shadow-sm border border-red-100">
+                            <div class="flex justify-between items-center text-red-800">
+                                <h3 class="font-bold italic">午餐: 敘敘苑 (大阪店)</h3>
+                                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-bold">11:30 預約</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot bg-slate-500"></div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-slate-500">
+                            <h3 class="font-bold">前往關西機場 (KIX)</h3>
+                            <p class="text-xs mt-1">IT211 11:35 起飛</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 
-
-
-    
-   <div id="page-shopping" class="main-page hidden p-4 max-w-md mx-auto">
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 mb-6">
-            <h2 class="text-lg font-black text-slate-800 mb-4"><i class="fas fa-shopping-bag text-red-500 mr-2"></i>自訂購物清單</h2>
-            
+    <div id="page-shopping" class="main-page hidden p-4 max-w-md mx-auto">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <h2 class="text-lg font-black text-slate-800 mb-4">自訂購物清單</h2>
             <div class="space-y-3 mb-6 bg-slate-50 p-4 rounded-xl border border-dashed border-slate-200">
-                <p class="text-[10px] font-bold text-slate-400 mb-2 uppercase text-center">新增購物項目</p>
-                <input id="shop-name-input" type="text" placeholder="品名 (例如: 吉伊卡哇)" class="w-full bg-white border border-slate-200 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-red-500 outline-none">
-                <input id="shop-note-input" type="text" placeholder="備註 (例如: 預估 ¥2000)" class="w-full bg-white border border-slate-200 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-red-500 outline-none">
-                
-                <div class="flex gap-2">
-                    <input type="file" id="file-upload-input" style="display: none;" accept="image/*" onchange="handleFileSelect(this)">
-                    <button onclick="document.getElementById('file-upload-input').click()" class="flex-1 bg-white border border-slate-300 text-slate-600 py-2 rounded-lg text-xs font-bold">
-                        <i class="fas fa-camera mr-1"></i> 選擇圖片
-                    </button>
-                    <button onclick="addNewShoppingItem()" class="flex-1 bg-red-500 text-white py-2 rounded-lg text-xs font-bold shadow-md">
-                        <i class="fas fa-plus mr-1"></i> 新增項目
-                    </button>
-                </div>
-
-                <div id="img-preview-box" class="hidden mt-2 flex justify-center">
-                    <img id="img-preview-tag" src="" class="w-20 h-20 rounded-lg object-cover border border-slate-200 shadow-sm">
-                </div>
+                <input id="shop-name-input" type="text" placeholder="品名" class="w-full rounded-lg px-4 py-2 text-sm border">
+                <button onclick="addNewShoppingItem()" class="w-full bg-red-500 text-white py-2 rounded-lg font-bold">新增</button>
             </div>
-
-            <ul id="custom-shop-list-display" class="space-y-4">
-                </ul>
+            <ul id="custom-shop-list-display" class="space-y-4"></ul>
         </div>
     </div>
 
-    <div id="page-hotel" class="main-page hidden p-4 max-w-md mx-auto space-y-6">
-        <div class="bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-100">
-            <div class="bg-slate-800 p-6 text-white text-center">
-                <i class="fas fa-home text-4xl mb-2 text-amber-400"></i>
-                <h2 class="text-xl font-bold">日居大正一号館</h2>
-                <p class="text-xs opacity-70">Osaka, Japan</p>
-            </div>
-            <div class="p-6 space-y-4">
-                <div class="flex items-center gap-4">
-                    <div class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600"><i class="fas fa-map-marker-alt"></i></div>
-                    <div>
-                        <p class="text-xs text-slate-400 font-bold uppercase">地址</p>
-                        <p class="text-sm font-bold text-slate-700">大正站附近 </p>
-                        <p class="text-xs text-slate-400 font-normal mt-0.5">日居大正一号館1-chōme-9-13 Sangenyanishi, Taishō-ku, Osaka, 551-0001日本 </p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-4">
-                    <div class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600"><i class="fas fa-key"></i></div>
-                    <div>
-                        <p class="text-xs text-slate-400 font-bold uppercase">入住提醒</p>
-                        <p class="text-sm font-bold text-slate-700 italic text-red-500 leading-tight">行李放玄關需拍照回傳</p>
-                    </div>
-                </div>
-                <a href="https://maps.app.goo.gl/pQ85Xj7rp1eXU9Xz7" target="_blank" class="block w-full bg-slate-800 text-white text-center py-4 rounded-2xl font-bold shadow-lg active:scale-95 transition">
-                <i class="fas fa-map-marked-alt mr-2 text-white"></i> 在 Google Maps 中開啟
-                </a>
-            </div>
+    <div id="page-hotel" class="main-page hidden p-4 max-w-md mx-auto">
+        <div class="bg-slate-800 p-6 text-white rounded-3xl text-center">
+            <h2 class="text-xl font-bold">日居大正一号館</h2>
+            <p class="text-sm mt-4">大正站附近 1-chōme-9-13</p>
         </div>
     </div>
 
@@ -295,136 +225,39 @@
     </div>
 
     <script>
-        // --- 購物清單功能升級版 (含圖片儲存) ---
-        let shopData = JSON.parse(localStorage.getItem('osaka_custom_shop_v2')) || [];
-        let tempImageBase64 = ""; // 暫存圖片
-
-        // 1. 處理檔案選取並顯示預覽
-        function handleFileSelect(input) {
-            const file = input.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    tempImageBase64 = e.target.result; // 將圖片轉為字串
-                    document.getElementById('img-preview-tag').src = tempImageBase64;
-                    document.getElementById('img-preview-box').classList.remove('hidden');
-                };
-                reader.readAsDataURL(file);
-            }
-        }
-
-        // 2. 新增項目到清單
-        function addNewShoppingItem() {
-            const name = document.getElementById('shop-name-input').value;
-            const note = document.getElementById('shop-note-input').value;
-            
-            if (!name) { alert("請輸入產品名稱"); return; }
-
-            const newItem = {
-                id: Date.now(),
-                name: name,
-                note: note || "未備註",
-                image: tempImageBase64 || ""
-            };
-
-            shopData.push(newItem);
-            saveDataAndRefresh();
-
-            // 清空輸入欄位
-            document.getElementById('shop-name-input').value = "";
-            document.getElementById('shop-note-input').value = "";
-            document.getElementById('file-upload-input').value = "";
-            document.getElementById('img-preview-box').classList.add('hidden');
-            tempImageBase64 = "";
-        }
-
-        // 3. 渲染列表到畫面上
-        function renderCustomShopList() {
-            const listContainer = document.getElementById('custom-shop-list-display');
-            // 最新的放在最上面 (.reverse)
-            listContainer.innerHTML = shopData.slice().reverse().map((item) => `
-                <li class="flex gap-4 bg-slate-50 p-3 rounded-xl border border-slate-100 items-center animate-fade-in">
-                    ${item.image ? 
-                        `<img src="${item.image}" class="w-16 h-16 rounded-lg object-cover border border-slate-200">` : 
-                        `<div class="w-16 h-16 bg-slate-200 rounded-lg flex items-center justify-center text-[10px] text-slate-400">無圖片</div>`
-                    }
-                    <div class="flex-1 min-w-0">
-                        <p class="text-sm font-bold text-slate-800 truncate">${item.name}</p>
-                        <p class="text-[11px] text-slate-500 truncate">${item.note}</p>
-                    </div>
-                    <button onclick="removeShopItem(${item.id})" class="text-red-400 text-xs font-bold px-2 py-1">刪除</button>
-                </li>
-            `).join('');
-        }
-
-        // 4. 刪除項目
-        function removeShopItem(id) {
-            if(confirm("確定要刪除嗎？")) {
-                shopData = shopData.filter(i => i.id !== id);
-                saveDataAndRefresh();
-            }
-        }
-
-        // 5. 存檔並重刷
-        function saveDataAndRefresh() {
-            localStorage.setItem('osaka_custom_shop_v2', JSON.stringify(shopData));
-            renderCustomShopList();
-        }
-
-        // 初始載入
-        window.addEventListener('load', renderCustomShopList);
-        
-        // 頁面切換邏輯
         function switchPage(pageId) {
             document.querySelectorAll('.main-page').forEach(p => p.classList.add('hidden'));
             document.getElementById('page-' + pageId).classList.remove('hidden');
-            
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('nav-active'));
             document.getElementById('nav-' + pageId).classList.add('nav-active');
-
-            const titles = { itinerary: 'OSAKA ADVENTURE', shopping: 'SHOPPING LIST', hotel: 'ACCOMMODATION' };
-            document.getElementById('main-title').innerText = titles[pageId];
             window.scrollTo(0,0);
         }
 
-        // 行程天數切換
         function showDay(dayNumber) {
             document.querySelectorAll('.day-content').forEach(el => el.classList.add('hidden'));
             document.getElementById('content-' + dayNumber).classList.remove('hidden');
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('tab-active'));
             document.getElementById('btn-' + dayNumber).classList.add('tab-active');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo(0,0);
         }
 
-        // 購物清單功能 (LocalStorage)
-        let items = JSON.parse(localStorage.getItem('osaka_shop')) || [];
-
-        function renderItems() {
-            const list = document.getElementById('shop-list');
-            list.innerHTML = items.map((item, index) => `
-                <li class="flex justify-between items-center bg-slate-50 p-3 rounded-lg border border-slate-100">
-                    <span class="text-sm font-bold text-slate-700">${item}</span>
-                    <button onclick="removeItem(${index})" class="text-red-400 text-xs font-bold">刪除</button>
-                </li>
-            `).join('');
-            localStorage.setItem('osaka_shop', JSON.stringify(items));
+        // 簡易購物清單邏輯
+        let shopData = JSON.parse(localStorage.getItem('osaka_shop')) || [];
+        function renderCustomShopList() {
+            const container = document.getElementById('custom-shop-list-display');
+            if(!container) return;
+            container.innerHTML = shopData.map(item => `<li class="p-3 bg-slate-50 rounded-lg border">${item.name}</li>`).join('');
         }
-
-        function addShopItem() {
-            const input = document.getElementById('shop-input');
-            if (input.value) {
-                items.push(input.value);
-                input.value = '';
-                renderItems();
+        function addNewShoppingItem() {
+            const name = document.getElementById('shop-name-input').value;
+            if(name) {
+                shopData.push({name: name});
+                localStorage.setItem('osaka_shop', JSON.stringify(shopData));
+                renderCustomShopList();
+                document.getElementById('shop-name-input').value = '';
             }
         }
-
-        function removeItem(index) {
-            items.splice(index, 1);
-            renderItems();
-        }
-
-        renderItems(); // 初始化讀取清單
+        window.onload = renderCustomShopList;
     </script>
 </body>
 </html>
